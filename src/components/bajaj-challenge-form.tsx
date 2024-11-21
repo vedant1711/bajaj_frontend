@@ -49,7 +49,8 @@ export default function BajajChallengeForm() {
     }
 
     try {
-      const res = await fetch('/api/bfhl', {
+    //   const res = await fetch('api/bfhl', {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/bfhl`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
